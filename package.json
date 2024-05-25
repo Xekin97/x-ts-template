@@ -1,18 +1,27 @@
 {
 	"name": "x-ts-template",
-	"version": "1.0.0",
+	"version": "1.0.0-0",
 	"description": "Templates for typescript projects.",
 	"main": "build/esm/index.min.js",
 	"common": "build/cjs",
 	"module": "build/esm",
 	"types": "build/types/index.d.ts",
+	"files": [
+		"build/*"
+	],
 	"scripts": {
 		"test": "jest",
-		"build": "rm -rf ./build && rollup -c"
+		"build": "rm -rf ./build && rollup -c",
+		"rel-fix": "npm version prerelease && npm publish --registry https://registry.npmjs.org/",
+		"rel-feat": "npm version prepatch && npm publish --registry https://registry.npmjs.org/"
 	},
 	"keywords": [
 		"typescript"
 	],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
 	"author": "xekin",
 	"license": "ISC",
 	"devDependencies": {
