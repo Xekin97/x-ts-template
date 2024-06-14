@@ -4,7 +4,7 @@
 		"target": "ESNext",
 		"declaration": true, //生成声明文件
 		"outDir": "build",
-		"rootDir": "src",
+		"rootDir": "./",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"skipLibCheck": true,
 		"esModuleInterop": true,
@@ -15,8 +15,9 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"noEmit": true
+		"noEmit": true,
+		"jsx": "react-jsx"
 	},
-	"include": ["src"],
+	"include": ["src", "test"],
 	"exclude": ["node_modules", "build"]
 }

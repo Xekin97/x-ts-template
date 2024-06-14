@@ -1,7 +1,7 @@
 {
-	"name": "x-ts-template",
+	"name": "x-ts-template-react-hooks",
 	"version": "1.0.0-0",
-	"description": "Templates for typescript projects.",
+	"description": "Templates for typescript projects of React hooks.",
 	"main": "build/esm/index.min.js",
 	"common": "build/cjs",
 	"module": "build/esm",
@@ -16,14 +16,18 @@
 		"rel-feat": "npm version prepatch && npm publish --registry https://registry.npmjs.org/"
 	},
 	"keywords": [
-		"typescript"
+		"typescript",
+		"react"
 	],
 	"repository": {
 		"type": "git",
 		"url": ""
 	},
 	"author": "xekin",
-	"license": "ISC",
+	"license": "MIT",
+	"dependencies": {
+		"react": "^18.3.1"
+	},
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
 		"@rollup/plugin-commonjs": "^25.0.8",
@@ -32,8 +36,15 @@
 		"@rollup/plugin-strip": "^3.0.4",
 		"@rollup/plugin-terser": "^0.4.4",
 		"@rollup/plugin-typescript": "^11.1.6",
+		"@testing-library/dom": "^10.1.0",
+		"@testing-library/react": "^15.0.7",
 		"@types/jest": "^29.5.12",
+		"@types/node": "^20.14.2",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
 		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"react-dom": "^18.3.1",
 		"rollup": "^4.18.0",
 		"rollup-plugin-node-externals": "^7.1.2",
 		"ts-jest": "^29.1.3",

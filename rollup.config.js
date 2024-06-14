@@ -1,9 +1,9 @@
 import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
-import terser from "@rollup/plugin-terser";
-import strip from "@rollup/plugin-strip";
-import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
+import resolve from "@rollup/plugin-node-resolve";
+import strip from "@rollup/plugin-strip";
+import terser from "@rollup/plugin-terser";
+import typescript from "@rollup/plugin-typescript";
 import externals from "rollup-plugin-node-externals";
 
 import pkg from "./package.json" assert { type: "json" };
